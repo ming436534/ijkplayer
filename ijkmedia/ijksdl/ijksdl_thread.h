@@ -45,7 +45,7 @@ typedef struct SDL_Thread
 
 SDL_Thread *SDL_CreateThreadEx(SDL_Thread *thread, int (*fn)(void *), void *data, const char *name);
 int         SDL_SetThreadPriority(SDL_ThreadPriority priority);
-void        SDL_WaitThread(SDL_Thread *thread, int *status);
+void        IJK_SDL_WaitThread(SDL_Thread *thread, int *status);
 void        SDL_DetachThread(SDL_Thread *thread);
 
 #endif

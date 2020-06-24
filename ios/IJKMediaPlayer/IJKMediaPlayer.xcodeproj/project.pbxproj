@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6FFCF024A35E4D0023F4D6 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB459324A2109C00BAD73C /* libcrypto.a */; };
+		3A6FFCF124A35E4D0023F4D6 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB459224A2109C00BAD73C /* libssl.a */; };
 		3AEB459424A2109C00BAD73C /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB459224A2109C00BAD73C /* libssl.a */; };
 		3AEB459524A2109C00BAD73C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB459324A2109C00BAD73C /* libcrypto.a */; };
 		3AEB459A24A2118C00BAD73C /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB459624A2118C00BAD73C /* libavcodec.a */; };
@@ -15,7 +17,6 @@
 		3AEB459D24A2118D00BAD73C /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB459924A2118C00BAD73C /* libavformat.a */; };
 		3AEB45A024A2119500BAD73C /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB459E24A2119500BAD73C /* libswresample.a */; };
 		3AEB45A124A2119500BAD73C /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB459F24A2119500BAD73C /* libswscale.a */; };
-		3AEB45A324A211D100BAD73C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB45A224A211C800BAD73C /* libz.tbd */; };
 		4D32BC811F906E3A00CE9F03 /* IJKSDLGLViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D32BC801F906E3600CE9F03 /* IJKSDLGLViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D32BC821F906E3B00CE9F03 /* IJKSDLGLViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D32BC801F906E3600CE9F03 /* IJKSDLGLViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DA7F6891F2B1E270032A499 /* ijkiourlhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7F6881F2B1E270032A499 /* ijkiourlhook.c */; };
@@ -144,8 +145,6 @@
 		5450B03C1E63EA4300568494 /* IJKSDLHudViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E68B7ACD1C1E97B0001DE241 /* IJKSDLHudViewCell.h */; };
 		5450B03D1E63EA4300568494 /* IJKVideoToolBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 5407EC271DF7F93B00457BFE /* IJKVideoToolBox.h */; };
 		5450B03E1E63EA4300568494 /* NSString+IJKMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = E69808991C7EB13A0048A46C /* NSString+IJKMedia.h */; };
-		5450B0451E63EAB700568494 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450AF8B1E63E59300568494 /* libcrypto.a */; };
-		5450B0461E63EAB700568494 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450AF8C1E63E59300568494 /* libssl.a */; };
 		5450B0471E63EABC00568494 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5450AF8F1E63E59800568494 /* libz.tbd */; };
 		549385C41E640456001AE08D /* IJKMediaFrameworkWithSSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5450AF9B1E63E65700568494 /* IJKMediaFrameworkWithSSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54A029B61D4700E6001C61C1 /* ijkasync.c in Sources */ = {isa = PBXBuildFile; fileRef = 54A029B11D4700E6001C61C1 /* ijkasync.c */; };
@@ -301,8 +300,6 @@
 		5407EC281DF7F93B00457BFE /* IJKVideoToolBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IJKVideoToolBox.m; path = ijkmedia/ijkplayer/ios/pipeline/IJKVideoToolBox.m; sourceTree = "<group>"; };
 		5407EC2B1DF81D2600457BFE /* IJKVideoToolBoxSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IJKVideoToolBoxSync.h; path = ijkmedia/ijkplayer/ios/pipeline/IJKVideoToolBoxSync.h; sourceTree = "<group>"; };
 		5407EC2C1DF81D2600457BFE /* IJKVideoToolBoxSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IJKVideoToolBoxSync.m; path = ijkmedia/ijkplayer/ios/pipeline/IJKVideoToolBoxSync.m; sourceTree = "<group>"; };
-		5450AF8B1E63E59300568494 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../../.warehouse/ff3.2--ijk0.7.6--20170203--001/build/universal/lib/libcrypto.a"; sourceTree = "<group>"; };
-		5450AF8C1E63E59300568494 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../../../.warehouse/ff3.2--ijk0.7.6--20170203--001/build/universal/lib/libssl.a"; sourceTree = "<group>"; };
 		5450AF8F1E63E59800568494 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5450AF9B1E63E65700568494 /* IJKMediaFrameworkWithSSL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IJKMediaFrameworkWithSSL.h; sourceTree = "<group>"; };
 		5450B0431E63EA4300568494 /* IJKMediaFrameworkWithSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IJKMediaFrameworkWithSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -488,9 +485,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5450B0471E63EABC00568494 /* libz.tbd in Frameworks */,
-				5450B0451E63EAB700568494 /* libcrypto.a in Frameworks */,
-				5450B0461E63EAB700568494 /* libssl.a in Frameworks */,
 				5450B0181E63EA4300568494 /* libavcodec.a in Frameworks */,
+				3A6FFCF124A35E4D0023F4D6 /* libssl.a in Frameworks */,
+				3A6FFCF024A35E4D0023F4D6 /* libcrypto.a in Frameworks */,
 				5450B0191E63EA4300568494 /* libavfilter.a in Frameworks */,
 				5450B01A1E63EA4300568494 /* libavformat.a in Frameworks */,
 				5450B01B1E63EA4300568494 /* libavutil.a in Frameworks */,
@@ -507,7 +504,6 @@
 				3AEB459524A2109C00BAD73C /* libcrypto.a in Frameworks */,
 				3AEB459D24A2118D00BAD73C /* libavformat.a in Frameworks */,
 				3AEB459424A2109C00BAD73C /* libssl.a in Frameworks */,
-				3AEB45A324A211D100BAD73C /* libz.tbd in Frameworks */,
 				3AEB459C24A2118D00BAD73C /* libavutil.a in Frameworks */,
 				E653C6FA1BCE5A750016835A /* libavformat.a in Frameworks */,
 				3AEB45A124A2119500BAD73C /* libswscale.a in Frameworks */,
@@ -689,8 +685,6 @@
 			children = (
 				5450AF8F1E63E59800568494 /* libz.tbd */,
 				3AEB45A224A211C800BAD73C /* libz.tbd */,
-				5450AF8B1E63E59300568494 /* libcrypto.a */,
-				5450AF8C1E63E59300568494 /* libssl.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1716,7 +1710,7 @@
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1748,7 +1742,7 @@
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 				VALIDATE_PRODUCT = YES;

@@ -802,7 +802,7 @@ static void decoder_abort(Decoder *d, FrameQueue *fq)
 {
     packet_queue_abort(d->queue);
     frame_queue_signal(fq);
-    SDL_WaitThread(d->decoder_tid, NULL);
+    IJK_SDL_WaitThread(d->decoder_tid, NULL);
     d->decoder_tid = NULL;
     packet_queue_flush(d->queue);
 }
@@ -1001,7 +1001,7 @@ static void stream_close(FFPlayer *ffp)
     packet_queue_abort(&is->videoq);
     packet_queue_abort(&is->audioq);
     av_log(NULL, AV_LOG_DEBUG, "wait for read_tid\n");
-    SDL_WaitThread(is->read_tid, NULL);
+    IJK_SDL_WaitThread(is->read_tid, NULL);
 
     /* close each stream */
     if (is->audio_stream >= 0)
@@ -1014,7 +1014,7 @@ static void stream_close(FFPlayer *ffp)
     avformat_close_input(&is->ic);
 
     av_log(NULL, AV_LOG_DEBUG, "wait for video_refresh_tid\n");
-    SDL_WaitThread(is->video_refresh_tid, NULL);
+    IJK_SDL_WaitThread(is->video_refresh_tid, NULL);
 
     packet_queue_destroy(&is->videoq);
     packet_queue_destroy(&is->audioq);
@@ -3730,7 +3730,7 @@ fail:
     is->initialized_decoder = 1;
     is->abort_request = true;
     if (is->video_refresh_tid)
-        SDL_WaitThread(is->video_refresh_tid, NULL);
+        IJK_SDL_WaitThread(is->video_refresh_tid, NULL);
     stream_close(ffp);
     return NULL;
 }

@@ -46,7 +46,7 @@ inline static void ijkmp_destroy(IjkMediaPlayer *mp)
 
     ffp_destroy_p(&mp->ffplayer);
     if (mp->msg_thread) {
-        SDL_WaitThread(mp->msg_thread, NULL);
+        IJK_SDL_WaitThread(mp->msg_thread, NULL);
         mp->msg_thread = NULL;
     }
 
